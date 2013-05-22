@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<script type="text/javascript" src="js/prototype.js"></script>
+<script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<link rel="stylesheet" href="lightbox.css" type="text/css"
+	media="screen" />
+<title>Haze</title>
+</head>
+<body>
+
+<div id="middle">
+
+<h2>Haze</h2>
+
+<div class="downloadbox"><b class="rcms_rp"> <b
+	class="rcms_rp1"> <b> </b> </b> <b class="rcms_rp2"> <b> </b> </b> <b
+	class="rcms_rp3"> </b> <b class="rcms_rp4"> </b> <b class="rcms_rp5">
+</b> </b>
+<div class="rcms_rp_content"><b>Pobierz:</b><br />
+<a href="dl/Haze20070618.tar.bz2">Haze20070618.tar.bz2</a></div>
+<b class="rcms_rp"> <b class="rcms_rp5"> </b> <b class="rcms_rp4">
+</b> <b class="rcms_rp3"> </b> <b class="rcms_rp2"> <b> </b> </b> <b
+	class="rcms_rp1"> <b> </b> </b> </b></div>
+
+<h3>Autor:</h3>
+<b>Łukasz Stefaniak</b> <a href="http://lustefaniak.kicks-ass.org/">www</a>
+
+<h3>Opis:</h3>
+<p>Program ten powstał w 2003 roku jako pierwszy mój program w C++
+oraz OpenGL. Jego jakoś pozostawia wiele do życzenia w tym momencie.
+Projekt ten ewoluował później razem z ewolucją mojego programowania i
+okazał się dobrym sposobem nauki. Nowszej wersji nie mogłem znaleźć więc
+ulepszyłem tylko tą pierwszą i oto ona.</p>
+
+
+<h3>Screenshots:</h3>
+<a rel="lightbox[s]" href="gfx/screenshot1.jpg"><img src="gfx/small/screenshot1.jpg" alt=""/></a> 
+<a rel="lightbox[s]" href="gfx/screenshot2.jpg"><img src="gfx/small/screenshot2.jpg" alt=""/></a>
+<a rel="lightbox[s]" href="gfx/screenshot3.jpg"><img src="gfx/small/screenshot3.jpg" alt=""/></a>
+<a rel="lightbox[s]" href="gfx/screenshot4.jpg"><img src="gfx/small/screenshot4.jpg" alt=""/></a>
+<a rel="lightbox[s]" href="gfx/screenshot5.jpg"><img src="gfx/small/screenshot5.jpg" alt=""/></a>
+<a rel="lightbox[s]" href="gfx/screenshot6.jpg"><img src="gfx/small/screenshot6.jpg" alt=""/></a>
+<a rel="lightbox[s]" href="gfx/screenshot7.jpg"><img src="gfx/small/screenshot7.jpg" alt=""/></a>
+<a rel="lightbox[s]" href="gfx/screenshot8.jpg"><img src="gfx/small/screenshot8.jpg" alt=""/></a>
+<a rel="lightbox[s]" href="gfx/screenshot9.jpg"><img src="gfx/small/screenshot9.jpg" alt=""/></a>
+<a rel="lightbox[s]" href="gfx/screenshot10.jpg"><img src="gfx/small/screenshot10.jpg" alt=""/></a>
+<a rel="lightbox[s]" href="gfx/screenshot11.jpg"><img src="gfx/small/screenshot11.jpg" alt=""/></a>
+
+
+
+<h3>Features:</h3>
+<ul>
+	<li>działanie na wielu platformach systemowych - z faktu użycia
+	cmake oraz opengl powinno być możliwe skompilowanie i uruchomienie tego
+	programu na prawie każdej platformie</li>
+	<li>parser plików map z half-life - tekstowy plik opisujący
+	kształt geometrii i oteksturowania poprzez zapis informacji o
+	płaszczyznach tworzących bryłę</li>
+	<li>generator geometrii - zamiana opisu płaszczyznowego na
+	poligonowy, sortowanie wierzchołków, generacja współrzędnych tekstur</li>
+	<li>generator oświetlenia - generator oświetlenia przy użyciu
+	techniki lightmappingu, różne typy świateł i możliwość definiowania
+	parametrów, cienie poprzez ray-casting</li>
+	<li>obsługa języka GLSL umożliwiająca oprogramowanie
+	zaawansowanych efektów graficznych</li>
+	<li>systemy cząsteczkowe - zaimplementowana obsługa pocisków,
+	deszczu i śniegu</li>
+	<li>obsługa GUI - własna biblioteka o prostej budowie</li>
+</ul>
+
+<h3>Wymagania:</h3>
+<ul>
+	<li>karta obsługująca GLSL  tzn. OpenGL 2.0</li>
+	<li>reszta wymagań sprzętowych trudna do ocenienia, aby się
+	przynajmniej uruchomiło nie potrzeba chyba nic więcej</li>
+	<li>w archiwum znajduje się blik wykonywalny dla
+	amd64(ubuntu6.10.1)</li>
+</ul>
+
+<h3>Wymagania dla kompilacji:</h3>
+<ul>
+	<li>cmake - najnowsza wersja  - libpng-dev  - libGLEW-dev  -
+	libSDL-dev</li>
+	<li>kompilatory i inne temu podobne rzeczy - jeśli udało się
+	skompilować cmake i glew ze źródeł, to reszta powinna pójść (zalecany
+	gcc4.1, kiedyś kompilowałem na mingw3.3)</li>
+</ul>
+
+<h3>Kompilacja:</h3>
+<p>Wchodzimy do katalogu build i wydajemy polecenie 
+<code>cmake ..</code> następnie <code>make</code> Po skończonej kompilacji wchodzimy do
+głównego katalogu(bardzo istotne! musimy być w głównym katalogu podczas
+uruchamiania) i wydajemy polecenie np. <code>./bin/haze</code></p>
+
+
+<h3>Prawa autorskie:</h3>
+<p>Cały kod jest mojego autorstwa, chyba, że jest inaczej. Jeśli
+jakaś część nie jest mojego autorstwa(np. biblioteka matematyczna) to
+jest to wyszczególnione. A jeżeli nie jest wyszczególnione, to zupełnie nie specjalnie.</p>
+<b>Program dostępny na zasadach GPLv2.</b> <br />
+<small>Użyte grafiki są nieznanego mi w tej chwili pochodzenia -
+nie jestem ich autorem. Ich jakiekolwiek użycie komercyjne jest
+prawdopodobnie zabronione.</small></div>
+
+</body>
+</html>
